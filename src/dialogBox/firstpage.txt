@@ -1,0 +1,78 @@
+<div className="page">
+                <div className="Wrap">
+                    <div className="inputArea">
+                        <div className="textInput">
+                            <div className="input" contentEditable="true"><span className="place_text_here" >Write here!</span></div>
+                        </div>
+                        <div className="ShareButton">
+                            <button className="Submitbutton">Share</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            /* .inputArea {
+  padding-top: 10px;
+  border-bottom: 1px solid smokewhite;
+}
+
+.inputArea .textInput {
+  position: relative;
+  min-height: 130px;
+} */
+
+/* .textInput .place_text_here {
+  position: absolute;
+  margin-top: -3px;
+  font-size: 22px;
+  color: #111;
+  pointer-events: none;
+} */
+/* .textInput .input {
+  outline: none;
+  font-size: 17px;
+  word-wrap: break-word;
+} */
+
+
+ /* #1da1f2*/
+  /* #459ce1, #258bdc, #ececec, #efefef */
+
+  <Popup trigger={false}>
+                                <h3>
+                                    IP address: 
+                                </h3>
+                                <h3>
+                                    Password: 
+                                </h3>
+                            </Popup>
+
+
+
+                            import React from "react";
+import './popup.css';
+
+function Popup(props) {
+    return (props.trigger) ? (
+        <div className="popup">
+            <div className="popup-btn">
+                <button className="close">X</button>
+                {props.children}
+            </div>
+        </div>
+    ) : "";
+}
+
+export default Popup;
+
+
+
+
+
+const [open, setOpen] = useState(false);
+
+    const popItUp = () => {
+        setOpen(!open);
+    }
+                        <button className="Submitbutton" onClick={popItUp}>Share</button>

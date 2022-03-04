@@ -1,0 +1,2 @@
+functional components => hooks ( 'use' )
+class components => this => this.state = { } => this.setState()

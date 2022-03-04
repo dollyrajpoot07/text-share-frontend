@@ -1,0 +1,24 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  font-family: 'Roboto Slab', serif;
+}
+.Header {
+  background: #fff;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  
+}
+.image {
+  height: 65px;
+  width: 65px;
+  top: 20px;
+}
+.logo {
+  font-weight: bold;
+  font-size: 35px;
+}
