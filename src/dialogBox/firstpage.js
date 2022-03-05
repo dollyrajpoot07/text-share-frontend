@@ -96,7 +96,7 @@ function Firstpage() {
                 }).then(response => {
                     if (response.data.success) {
                         const textId = response.data.textId;
-                        setLink(`${process.env.URL}?textId=${textId}`);
+                        setLink(`${process.env.REACT_APP_URL}?textId=${textId}`);
                         setShowPopup(true);
                         setText('');
                     }
@@ -109,7 +109,7 @@ function Firstpage() {
                 }).then(response => {
                     if (response.data.success) {
                         const textId = response.data.textId;
-                        setLink(`${process.env.URL}?textId=${textId}`);
+                        setLink(`${process.env.REACT_APP_URL}?textId=${textId}`);
                         setShowPopup(true);
                         setText('');
                     }
