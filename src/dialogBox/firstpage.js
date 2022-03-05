@@ -38,7 +38,7 @@ const GET_URL = `${DOMAIN}/getText`;
 function Firstpage() {
     const [text, setText] = useState("");
     const [isDisabled, setDisabled] = useState(false);
-    const [link, setLink] = useState("http://localhost:3000/abcdef");
+    const [link, setLink] = useState("");
     const [showPopup, setShowPopup] = useState(false);
     const [password, setPassword] = useState('');
     const [havePassword, setHavePassword] = useState(false);
@@ -96,7 +96,7 @@ function Firstpage() {
                 }).then(response => {
                     if (response.data.success) {
                         const textId = response.data.textId;
-                        setLink(`http://localhost:3000?textId=${textId}`);
+                        setLink(`${process.env.URL}?textId=${textId}`);
                         setShowPopup(true);
                         setText('');
                     }
@@ -109,7 +109,7 @@ function Firstpage() {
                 }).then(response => {
                     if (response.data.success) {
                         const textId = response.data.textId;
-                        setLink(`http://localhost:3000?textId=${textId}`);
+                        setLink(`${process.env.URL}?textId=${textId}`);
                         setShowPopup(true);
                         setText('');
                     }
