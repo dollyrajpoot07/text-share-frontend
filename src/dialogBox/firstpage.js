@@ -31,9 +31,9 @@ const ShareContent = ({ link }) => {
     )
 }
 
-
-const SHARE_URL = 'http://localhost:8080/saveText';
-const GET_URL = 'http://localhost:8080/getText';
+const DOMAIN = 'https://texts-share.herokuapp.com';
+const SHARE_URL = `${DOMAIN}/saveText`;
+const GET_URL = `${DOMAIN}/getText`;
 
 function Firstpage() {
     const [text, setText] = useState("");
